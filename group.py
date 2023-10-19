@@ -12,20 +12,20 @@ my_group = [
     {
         "name": "Zalika",
         "age": "28",
-        "job": "cleaner",
+        "job": "artist",
         "relationship": {"friend": ["Jill"],"landlord": ["Nash"]},
     },
     {
         "name": "John",
         "age": "27",
-        "job": "cleaner",
+        "job": "writer",
         "relationship": {"partner": ["Jill"],"cousin":["Nash"]},
     },
     {
         "name": "Nash",
         "age": "34",
-        "job": "cleaner",
-        "relationship": {"friend": ["Zalika"],"cousin":["John"]},
+        "job": "chef",
+        "relationship": {"tenant": ["Zalika"],"cousin":["John"]},
     },
 ]
 
