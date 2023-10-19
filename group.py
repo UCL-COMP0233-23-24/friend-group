@@ -3,29 +3,12 @@
 # Your code to go here...
 
 
-class person:
-    def __init__(self,name,age,job="",relationship={}):
-        self.name=name
-        self.age=age
-        self.job=job
-        self.relationship=relationship
-    
-    def create_relationship(self,b,relation):
-        b.relationship[self.name]=relation
-        self.relationship[b.name]=relation
-        
-
-    def showall(self):
-        print(self.name,self.age,self.job,self.relationship)
+Jill={"name":"Jill","age":26,"Job":"Biologist","Relation":["friend","partner"]}
+Zalika={"name":"Zalika","age":28,"Job":"artist","Relation":["friend","renter"]}
+John={"name":"John","age":27,"Job":"writer","Relation":["partner","uncle"]}
+Nash={"name":"Nash","age":34,"Job":"chef","Relation":["cousin","landlord"]}
 
 
-Jill = person("Jill",26, "biologist")
-Zalika = person("Zalika",28,"artist")
-Zalika.showall()
-Jill.showall()
-Jill.create_relationship(Zalika,"friend")
-
-Zalika.showall()
-Jill.showall()
-
-#my_group =
+my_group =[]
+my_group.append([Jill,Zalika,John,Nash])
+print(my_group)
