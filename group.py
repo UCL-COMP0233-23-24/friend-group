@@ -41,9 +41,9 @@ forget(Jill,Zalika)
 print(Jill)
 print(Zalika)
 
-Dick = add_person("Dokolo", 24, "student", {})
-my_group.append(Dick)
-print(Dick)
+Dokolo = add_person("Dokolo", 24, "student", {})
+my_group.append(Dokolo)
+print(Dokolo)
 
 print(average_age(my_group))
 
