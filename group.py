@@ -2,4 +2,4 @@
 
 # Your code to go here...
 
-my_group =
+my_group = [{"name":"Hanze Zhang","age":"22","job":"cook","friend":"Weijie Xie"}]
