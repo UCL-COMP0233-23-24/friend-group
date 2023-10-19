@@ -12,19 +12,19 @@ my_group_2 = {"Name": "Zanika",
               "Age": 28,
               "Jobs": "Artist",
               "Relation": "Jill's friend"}
-print(my_group_2)
+print(my_group_2.values())
 
 my_group_3 = {"Name": "John",
               "Age": 27,
               "Jobs": "Writer",
               "Relation": "Jill's partner"}
-print(my_group_3)
+print(my_group_3.values())
 
 my_group_4 = {"Name": "Nash",
             "Age": 34,
             "Jobs": "Chef",
             "Relation": ["John's cousin", "Zalika's landlord"]}
-print(my_group_4)
+print(my_group_4.values())
 
 
 
