@@ -41,6 +41,37 @@ my_group = {
 
 
 
-a = {name: info['age'] for name, info in my_group.items()}
+# a = {name: info['age'] for name, info in my_group.items()}
 
-print(a)
+# print(a)
+
+print(my_group)
+
+def forget(person1, person2):
+    for name, info in my_group.items():
+        if name == person1:
+
+            for key, value in info['connection'].items():
+                if value == person2:
+                    info['connection'].pop(key)
+                    break
+
+    for name, info in my_group.items():    
+        if name == person2:
+
+            for key, value in info['connection'].items():
+                if value == person1:
+                    info['connection'].pop(key)
+                    break
+
+forget('Jill', 'Zalika')
+
+print(my_group)
+
+def average_age():
+    ages = {info['age'] for name, info in my_group.items()}
+    sum = 0
+    for age in ages:
+        sum += age
+        average = sum/ len(ages)
+    return average
