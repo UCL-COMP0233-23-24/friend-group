@@ -27,11 +27,12 @@ class Person:
         
     def conn(self,do_print=1):
         if do_print==1:
+            print(self.name)
             for conn_type in self.connections:
                 String=conn_type+": "
                 for i in self.connections[conn_type]: String=String+i.name+", "
                 print(String)
-        return self.connections
+        else: return self.connections
         
         
     def add_connection(self, new_person, conn_type=str):
@@ -42,7 +43,32 @@ class Person:
                 new_person.connections[conn_type].append(self)  
         else:
             raise TypeError("Error: Invalid connection type")
+            
+    def forget(self,person):
+        for conn_type in self.connections:
+            if person in self.connections[conn_type]:
+                self.connections[conn_type].remove(person)
         
+        
+class Group:
+    def __init__(self,members):
+        self.members = members
+    
+    def add_person(self,person):
+        self.members.append(person)
+        
+    def forget_person(self,A=str,B=str):
+        for i in self.members:
+            if i.name==A:
+                i.forget(A)
+            else:
+                raise ValueError("Person not in group")
+                
+    def avg_age(self):
+        Age=[]
+        for i in self.members:
+            Age.append(i.age)
+        return sum(Age)/len(Age)
         
         
         
@@ -58,4 +84,7 @@ Jill.add_connection(Zalika,"Friends")
 
 Jill.conn()
 Zalika.conn()
+John.conn()
+Nash.conn()
+
     
