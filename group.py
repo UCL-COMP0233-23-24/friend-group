@@ -2,8 +2,19 @@
 
 # Your code to go here...
 
-my_group = [{'name': 'Jill', 'age': 26, 'job': 'biologist', 'friends': 'Zalika', 'partner': 'John'}, 
-            {'name': 'Zalika', 'age': 28, 'job': 'artist', 'friends': 'Jill'},
-            {'name': 'John', 'age': 27, 'job': 'writer', 'partner': 'Jill'},
-            {'name': 'Nash', 'age': 34, 'job': 'chef', 'landlord': 'Zalika', 'cousin': 'John'},
-            ]
+class person : 
+    def __init__(self, name, age, job=None):
+        self.name = name
+        self.age = age
+        self.job = job
+
+Jill = person('Jill', 26, 'Biologist')
+Zalika = person('Zalika', 28, 'Artist')
+John = person('John', 27, 'Writer')
+Nash = person('Nash', 34, 'Chef')
+
+
+
+print(Jill.name)
+
+#my_group = 
