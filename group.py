@@ -1,7 +1,5 @@
 """An example of how to represent a group of acquaintances in Python."""
 
-# Your code to go here...
-
 my_group = {
 
         "Jill" : 
@@ -41,12 +39,7 @@ my_group = {
 
 
 
-# a = {name: info['age'] for name, info in my_group.items()}
-
-# print(a)
-
-print(my_group)
-
+# Remove the connection between two people in the group
 def forget(person1, person2):
     for name, info in my_group.items():
         if name == person1:
@@ -64,14 +57,24 @@ def forget(person1, person2):
                     info['connection'].pop(key)
                     break
 
-forget('Jill', 'Zalika')
 
-print(my_group)
 
+# Add a new person with the given characteristics to the group
+def add_person(name, age, job, relations:dict):
+    my_group[name] = {
+        "connection" : relations,
+        "age" : age,
+        "job" : job
+    }
+
+
+
+# Calculate the mean age for the group
 def average_age():
     ages = {info['age'] for name, info in my_group.items()}
     sum = 0
     for age in ages:
         sum += age
-        average = sum/ len(ages)
+        average = sum / len(ages)
     return average
+
