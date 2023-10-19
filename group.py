@@ -109,9 +109,6 @@ class Group:
 
     def max_age_over_one_friend(self):
         connect_len = []
-        for people in self.members: 
-            print(people)
-        part_connect_len = (sum(len(v) for v in people.connections.values()))
         filtered = [people for people in self.members if (len(people.connections["Friends"]) >0)]
         age_vector = []
         for people in filtered: age_vector.append(people.age)
