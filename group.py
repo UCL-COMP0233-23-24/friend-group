@@ -75,3 +75,29 @@ def average_age():
         sum += age
         average = sum / len(ages)
     return average
+
+# the maximum age of people in the group
+def max_age():
+    all_ages = {info['age'] for name, info in my_group.items()}
+    max_age = max(all_ages)
+    return max_age
+print(f"The maximum age of people in the group: {max_age()}")
+
+# the average (mean) number of relations among members of the group
+sum_connection = 0
+for name, info in my_group.items():
+    sum_connection += len(info["connection"])
+    avg_connection = sum_connection / len(my_group)
+print(f"The mean number of relations among members of the group: {avg_connection}")
+
+# the maximum age of people in the group that have at least one relation
+relation_all_ages = {info['age'] for name, info in my_group.items() 
+                    if len(info['connection']) >= 1}
+relation_max_age = max(relation_all_ages)
+print(f"The maximum age of people in the group that have at least one relation: {relation_max_age}")
+
+# the maximum age of people in the group that have at least one friend
+friend_all_ages = {info['age'] for name, info in my_group.items() 
+                    if "friend" in info['connection']}
+friend_max_age = max(friend_all_ages)
+print(f"The maximum age of people in the group that have at least one friend: {friend_max_age}")
