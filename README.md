@@ -26,3 +26,6 @@ Some things you may wish to consider in your model:
 - Does it allow people with no connections?
 - Does it assume that connections are always reciprocal (e.g. if A is B's friend, does B
 automatically consider A a friend too?)
+
+- group_1 (TODO)
+ - [base](./group_1/base.md)

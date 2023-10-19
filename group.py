@@ -41,7 +41,7 @@ forget(Jill,Zalika)
 print(Jill)
 print(Zalika)
 
-Dick = add_person("Dick", 26, "writer", {})
+Dick = add_person("Dokolo", 24, "student", {})
 my_group.append(Dick)
 print(Dick)
 
