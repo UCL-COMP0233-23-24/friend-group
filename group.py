@@ -33,7 +33,7 @@ class GroupOfAcquaintances:
 # Example usage:
 group = GroupOfAcquaintances()
 
-group.add_person("Anqi Wang", 22, "SDIC")
+group.add_person("Alice", 30, "Engineer")
 group.add_person("Bob", 25, "Teacher")
 group.add_person("Charlie", 35, "Doctor")
 
