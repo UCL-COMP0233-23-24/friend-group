@@ -33,20 +33,16 @@ class GroupOfAcquaintances:
 # Example usage:
 group = GroupOfAcquaintances()
 
-group.add_person("Alice", 30, "Engineer")
-group.add_person("Bob", 25, "Teacher")
-group.add_person("Charlie", 35, "Doctor")
+group.add_person("Jill", 26, " biologist")
+group.add_person("Zalika", 28, "artist")
+group.add_person("John", 27, "writer")
+group.add_person("Nash", 34, "chef")
 
-group.connect_people("Alice", "Bob", "Friend")
-group.connect_people("Alice", "Charlie", "Colleague")
-group.connect_people("Bob", "Charlie", "Friend")
 
-# Accessing attributes and connections
-alice = group.people["Alice"]
-print(f"{alice.name} is {alice.age} years old and works as an {alice.job}.")
-print(f"{alice.name}'s connections: {alice.connections}")
+group.connect_people("Jill", "Zalika", "Friend")
+group.connect_people("Jill", "John", "partner")
+group.connect_people("Nash", "John", "cousin")
+group.connect_people("Nash", "Zalika", "landlord")
 
-# Output:
-# Alice is 30 years old and works as an Engineer.
-# Alice's connections: {'Friend': ['Bob'], 'Colleague': ['Charlie']}
+
 
