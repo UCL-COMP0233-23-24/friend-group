@@ -3,11 +3,10 @@
 """
 my_group = {
     <name> : {
-        age : <age>,
-        job : <job>,
-        connections : {
-            <name>:['friend', 'landlord'],
-            <name>:['partner']
+        "age" : <age>,
+        "job" : <job>,
+        "connections" : {
+            <name>:[<relation>, <relation>]
         },
     },
 }
