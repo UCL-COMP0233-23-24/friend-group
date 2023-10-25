@@ -26,5 +26,5 @@ my_group_4 = {"Name": "Nash",
             "Relation": ["John's cousin", "Zalika's landlord"]}
 print(my_group_4.values())
 
-
-
+age_list = [26,27,28,34]
+print(max(age_list))
